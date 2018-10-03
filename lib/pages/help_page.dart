@@ -81,7 +81,9 @@ class _HelpPageState extends State<HelpPage> {
                       ? 'Reklamalarni taqiqlash'
                       : 'Запрет рассылок',
                 ),
-                onTap: () {}),
+                onTap: () {
+                   _call('**111*0271%23');
+                }),
             Divider(
               height: 2.0,
             ),
