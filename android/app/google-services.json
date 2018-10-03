@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "369876905225",
+    "firebase_url": "https://ums-control-b1edd.firebaseio.com",
+    "project_id": "ums-control-b1edd",
+    "storage_bucket": "ums-control-b1edd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369876905225:android:f3600cd491c13d15",
+        "android_client_info": {
+          "package_name": "com.project.ums"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369876905225-eak3speigue0eujt2sk4ko9mg8a0773b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDolC7XyC4nBE3X8czdbeALIsnfoZFmDT8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
