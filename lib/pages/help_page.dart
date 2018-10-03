@@ -56,7 +56,10 @@ class _HelpPageState extends State<HelpPage> {
                       ? 'Oxirgi to`lov'
                       : 'Последняя оплата баланса',
                 ),
-                onTap: () {}),
+                onTap: () {
+                                    _call('*111*015%23');
+
+                }),
             Divider(
               height: 2.0,
             ),
