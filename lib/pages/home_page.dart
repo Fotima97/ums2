@@ -123,28 +123,7 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  FlatButton(
-                    splashColor: Colors.red[50],
-                    highlightColor: Colors.red[50],
-                    child: Column(
-                      children: <Widget>[
-                        SvgPicture.asset(
-                          'assets/Yordam.svg',
-                          allowDrawingOutsideViewBox: true,
-                          height: iconHeight,
-                          width: iconWidth,
-                        ),
-                        SizedBox(
-                          height: 15.0,
-                        ),
-                        Text(languageType1 == uzbek ? 'Yordam' : 'Помощь')
-                      ],
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/help');
-                    },
-                  ),
-                  FlatButton(
+                   FlatButton(
                     splashColor: Colors.red[50],
                     highlightColor: Colors.red[50],
                     child: Column(
@@ -165,6 +144,29 @@ class _HomePageState extends State<HomePage> {
                       Navigator.pushNamed(context, '/internet');
                     },
                   ),
+                    FlatButton(
+                    splashColor: Colors.red[50],
+                    highlightColor: Colors.red[50],
+                    child: Column(
+                      children: <Widget>[
+                        SvgPicture.asset(
+                          'assets/Muloqot.svg',
+                          allowDrawingOutsideViewBox: true,
+                          height: iconHeight,
+                          width: iconWidth,
+                        ),
+                        SizedBox(
+                          height: 15.0,
+                        ),
+                        Text(languageType1 == uzbek ? 'Muloqot' : 'Общение')
+                      ],
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/chat');
+                    },
+                  ),
+                
+                 
                 ],
               ),
               SizedBox(
@@ -194,7 +196,37 @@ class _HomePageState extends State<HomePage> {
                       Navigator.pushNamed(context, '/tariffs');
                     },
                   ),
-                  FlatButton(
+                   FlatButton(
+                    splashColor: Colors.red[50],
+                    highlightColor: Colors.red[50],
+                    child: Column(
+                      children: <Widget>[
+                        SvgPicture.asset(
+                          'assets/Yordam.svg',
+                          allowDrawingOutsideViewBox: true,
+                          height: iconHeight,
+                          width: iconWidth,
+                        ),
+                        SizedBox(
+                          height: 15.0,
+                        ),
+                        Text(languageType1 == uzbek ? 'Yordamchi' : 'Помощник')
+                      ],
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/help');
+                    },
+                  ),
+                
+                ],
+              ),
+              SizedBox(
+                height: spaceBetweenRows,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                   FlatButton(
                     splashColor: Colors.red[50],
                     highlightColor: Colors.red[50],
                     child: Column(
@@ -213,35 +245,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                     onPressed: () {
                       Navigator.pushNamed(context, '/services');
-                    },
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: spaceBetweenRows,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
-                  FlatButton(
-                    splashColor: Colors.red[50],
-                    highlightColor: Colors.red[50],
-                    child: Column(
-                      children: <Widget>[
-                        SvgPicture.asset(
-                          'assets/Muloqot.svg',
-                          allowDrawingOutsideViewBox: true,
-                          height: iconHeight,
-                          width: iconWidth,
-                        ),
-                        SizedBox(
-                          height: 15.0,
-                        ),
-                        Text(languageType1 == uzbek ? 'Muloqot' : 'Общение')
-                      ],
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/chat');
                     },
                   ),
                   FlatButton(

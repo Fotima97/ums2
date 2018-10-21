@@ -56,7 +56,7 @@ class _DrawerContainerState extends State<DrawerContainer> {
             ListTileTheme(
               child: ListTile(
                 title: Text(
-                  languageType1 == uzbek ? 'Yordam' : 'Помощь',
+                  languageType1 == uzbek ? 'Yordamchi' : 'Помощник',
                   softWrap: true,
                   overflow: TextOverflow.clip,
                   style: TextStyle(color: Colors.black),
