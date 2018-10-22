@@ -108,10 +108,13 @@ class _NewsPageState extends State<NewsPage> {
                 future: fetchNews(),
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
+                    List<NewsModel> reversednews =
+                        snapshot.data.reversed.toList();
                     return ListView.builder(
-                        itemCount: snapshot.data?.length,
+                        // reverse: true,
+                        itemCount: reversednews?.length,
                         itemBuilder: (context, index) {
-                          var news = snapshot.data[index];
+                          var news = reversednews[index];
                           return FlatButton(
                             padding: EdgeInsets.all(0.0),
                             child: Card(

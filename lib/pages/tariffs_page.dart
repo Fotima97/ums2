@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'package:flushbar/flushbar.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
@@ -112,7 +113,13 @@ class _TariffsPageState extends State<TariffsPage> {
     } else if (icon == callIcon) {
       return Icon(Icons.call);
     } else if (icon == internetIcon) {
-      return Icon(Icons.signal_cellular_4_bar);
+      return SvgPicture.asset(
+        'assets/signal.svg',
+        color: Colors.grey[600],
+        allowDrawingOutsideViewBox: true,
+        height: 20.0,
+        width: 20.0,
+      );
     } else {
       return Icon(Icons.call);
     }
@@ -234,7 +241,6 @@ class _TariffsPageState extends State<TariffsPage> {
                                   flex: 5,
                                   child: Container(
                                     child: ListView.builder(
-                                      
                                       itemCount: description.length,
                                       itemBuilder: (context, index) {
                                         Description desc = description[index];

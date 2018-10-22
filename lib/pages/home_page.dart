@@ -29,6 +29,7 @@ class _HomePageState extends State<HomePage> {
     Navigator.pushNamed(context, '/news');
   }
 
+  var textStyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0);
   @override
   void initState() {
     super.initState();
@@ -123,7 +124,7 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                   FlatButton(
+                  FlatButton(
                     splashColor: Colors.red[50],
                     highlightColor: Colors.red[50],
                     child: Column(
@@ -137,14 +138,15 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text(languageType1 == uzbek ? 'Internet' : 'Интернет')
+                        Text(languageType1 == uzbek ? 'Internet' : 'Интернет',
+                            style: textStyle)
                       ],
                     ),
                     onPressed: () {
                       Navigator.pushNamed(context, '/internet');
                     },
                   ),
-                    FlatButton(
+                  FlatButton(
                     splashColor: Colors.red[50],
                     highlightColor: Colors.red[50],
                     child: Column(
@@ -158,15 +160,14 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text(languageType1 == uzbek ? 'Muloqot' : 'Общение')
+                        Text(languageType1 == uzbek ? 'Muloqot' : 'Общение',
+                            style: textStyle)
                       ],
                     ),
                     onPressed: () {
                       Navigator.pushNamed(context, '/chat');
                     },
                   ),
-                
-                 
                 ],
               ),
               SizedBox(
@@ -189,14 +190,15 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text(languageType1 == uzbek ? 'Tariflar' : 'Тарифы')
+                        Text(languageType1 == uzbek ? 'Tariflar' : 'Тарифы',
+                            style: textStyle)
                       ],
                     ),
                     onPressed: () {
                       Navigator.pushNamed(context, '/tariffs');
                     },
                   ),
-                   FlatButton(
+                  FlatButton(
                     splashColor: Colors.red[50],
                     highlightColor: Colors.red[50],
                     child: Column(
@@ -210,14 +212,14 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text(languageType1 == uzbek ? 'Yordamchi' : 'Помощник')
+                        Text(languageType1 == uzbek ? 'Yordamchi' : 'Помощник',
+                            style: textStyle)
                       ],
                     ),
                     onPressed: () {
                       Navigator.pushNamed(context, '/help');
                     },
                   ),
-                
                 ],
               ),
               SizedBox(
@@ -226,7 +228,7 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                   FlatButton(
+                  FlatButton(
                     splashColor: Colors.red[50],
                     highlightColor: Colors.red[50],
                     child: Column(
@@ -240,7 +242,8 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text(languageType1 == uzbek ? 'Xizmatlar' : 'Услуги')
+                        Text(languageType1 == uzbek ? 'Xizmatlar' : 'Услуги',
+                            style: textStyle)
                       ],
                     ),
                     onPressed: () {
@@ -261,7 +264,8 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text(languageType1 == uzbek ? 'Yangiliklar' : 'Новости')
+                        Text(languageType1 == uzbek ? 'Yangiliklar' : 'Новости',
+                            style: textStyle)
                       ],
                     ),
                     onPressed: () {
