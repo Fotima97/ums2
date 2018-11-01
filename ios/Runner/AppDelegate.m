@@ -11,11 +11,13 @@
   FlutterMethodChannel* batteryChannel = [FlutterMethodChannel
                                           methodChannelWithName:@"com.project.ums/call"
                                           binaryMessenger:controller];
+
  [batteryChannel setMethodCallHandler:^(FlutterMethodCall* call, FlutterResult result) {
    NSString *number=call.arguments;
     // TODO
   if ([@"callNumber" isEqualToString:call.method]) {
 
+            
   }
 
   }];

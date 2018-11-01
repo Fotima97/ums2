@@ -25,7 +25,7 @@ dependencies:
   flutter_cache_manager: ^0.1.2
   path_provider: ^0.4.1
   connectivity: ^0.3.1
-  firebase_messaging: ^2.0.0
+  firebase_messaging: ^2.0.3
   flutter_html: ^0.7.1 
 
 dev_dependencies:

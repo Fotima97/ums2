@@ -142,6 +142,8 @@ class _InternetPageState extends State<InternetPage>
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return ListView.builder(
+              scrollDirection: Axis.vertical,
+              primary: true,
               itemCount: snapshot.data?.length,
               itemBuilder: (context, index) {
                 var packages = snapshot.data[index];
@@ -277,7 +279,7 @@ class _InternetPageState extends State<InternetPage>
                         style: TextStyle(fontSize: 16.0),
                       ),
                       onTap: () {
-                                                _call('**111*0011%23');
+                                                _call('*111*0011%23');
 
                       },
                     ),
@@ -290,7 +292,7 @@ class _InternetPageState extends State<InternetPage>
                         style: TextStyle(fontSize: 16.0),
                       ),
                       onTap: () {
-                        _call('**111*0010%23');
+                        _call('*111*0010%23');
                       },
                     ),
                     ListTile(

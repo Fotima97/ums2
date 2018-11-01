@@ -179,17 +179,21 @@ class _TariffsPageState extends State<TariffsPage> {
             if (snapshot.hasData) {
               return Container(
                   color: Colors.red,
-                  child: PageView.builder(
-                    controller: pageController,
+                  child: ListView.builder(
+                    primary: true,
+                    // controller: pageController,
+                    scrollDirection: Axis.horizontal,
                     itemCount: snapshot.data.length,
                     itemBuilder: (context, index) {
                       var tarrif = snapshot.data[index];
                       var description = tarrif.description;
                       return Container(
+                          width: 310.0,
+                          height: 300.0,
                           padding: EdgeInsets.symmetric(
                               horizontal: 10.0, vertical: 20.0),
                           margin: EdgeInsets.symmetric(
-                              horizontal: 20.0, vertical: 20.0),
+                              horizontal: 10.0, vertical: 10.0),
                           decoration: BoxDecoration(
                               boxShadow: <BoxShadow>[
                                 BoxShadow(
@@ -241,6 +245,8 @@ class _TariffsPageState extends State<TariffsPage> {
                                   flex: 5,
                                   child: Container(
                                     child: ListView.builder(
+                                      primary: false,
+                                      shrinkWrap: true,
                                       itemCount: description.length,
                                       itemBuilder: (context, index) {
                                         Description desc = description[index];

@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/home': (BuildContext context) => HomePage(title: 'UMS Control'),
         '/help': (BuildContext context) =>
-            HelpPage(title: languageType1 == uzbek ? 'Yordam' : 'Помощь'),
+            HelpPage(title: languageType1 == uzbek ? 'Yordamchi' : 'Помощник'),
         '/internet': (BuildContext context) => InternetPage(
             title: languageType1 == uzbek ? 'Internet' : 'Интернет'),
         '/tariffs': (BuildContext context) =>

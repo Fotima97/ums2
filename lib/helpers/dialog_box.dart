@@ -1,10 +1,23 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 import 'package:ums/helpers/app_constants.dart';
 import 'dart:io';
 
 import 'package:ums/pages/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+const platform1 = const MethodChannel(channel);
+
+Future _call(String number) async {
+  try {
+    await platform1.invokeMethod('callNumber', number);
+  } catch (e) {
+    print(e);
+  }
+}
 
 showDialogBox2(BuildContext context, String title, String ussd, String body,
     String okAction) {
@@ -43,7 +56,7 @@ showDialogBox2(BuildContext context, String title, String ussd, String body,
       FlatButton(
         child: Text(okAction),
         onPressed: () {
-          launch('tel:' + ussd.substring(0, ussd.length - 1) + '%23');
+          _call(ussd.substring(0, ussd.length - 1) + '%23');
         },
       )
     ],

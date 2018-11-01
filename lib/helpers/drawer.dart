@@ -11,6 +11,8 @@ class DrawerContainer extends StatefulWidget {
 }
 
 class _DrawerContainerState extends State<DrawerContainer> {
+
+  
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -255,7 +257,7 @@ class _DrawerContainerState extends State<DrawerContainer> {
                   allowDrawingOutsideViewBox: true,
                 ),
                 onTap: () {
-                  launch('https://play.google.com/store/apps?hl=ru');
+                  launch('https://play.google.com/store/apps/details?id=com.project.ums');
                 },
               ),
             ),
@@ -279,8 +281,8 @@ class _DrawerContainerState extends State<DrawerContainer> {
                 onTap: () {
                   Share.share(
                     languageType1 == uzbek
-                        ? 'UMS uchun yangi ilova https://play.google.com/store/apps?hl=ru'
-                        : 'Новое приложение для пользователей UMS https://play.google.com/store/apps?hl=ru',
+                        ? 'UMS uchun yangi ilova https://play.google.com/store/apps/details?id=com.project.ums'
+                        : 'Новое приложение для пользователей UMS https://play.google.com/store/apps/details?id=com.project.ums',
                   );
                 },
               ),
