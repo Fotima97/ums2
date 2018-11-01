@@ -16,8 +16,9 @@
    NSString *number=call.arguments;
     // TODO
   if ([@"callNumber" isEqualToString:call.method]) {
+[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", number]]];
 
-            
+
   }
 
   }];
