@@ -172,7 +172,7 @@ class _ChatPageState extends State<ChatPage> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => InternetHelpPage(
-                                          content: 'Help',
+                                          content: item.description,
                                         )));
                           },
                         ),

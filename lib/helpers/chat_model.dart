@@ -1,12 +1,16 @@
 class ChatModel {
   String title;
+  String description;
   List<Items> items;
 
-  ChatModel({this.title, this.items});
+  ChatModel({this.title, this.items, this.description});
   factory ChatModel.fromJson(Map<String, dynamic> parsedJson) {
     var list = parsedJson['items'] as List;
     List<Items> packages = list.map((i) => Items.fromJson(i)).toList();
-    return ChatModel(title: parsedJson['title'] ?? '...', items: packages) ??
+    return ChatModel(
+            title: parsedJson['title'] ?? '...',
+            description: parsedJson['description']?? '...',
+            items: packages) ??
         '';
   }
 }
