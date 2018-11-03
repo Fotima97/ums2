@@ -38,7 +38,7 @@ showDialogBox2(BuildContext context, String title, String ussd, String body,
             //  style: TextStyle(color: primaryColor),
             ),
         onPressed: () {
-          launch('tel:' + ussd.substring(0, ussd.length - 1) + '%23');
+         _call(ussd);
         },
       )
     ],

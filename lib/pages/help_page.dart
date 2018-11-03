@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ums/helpers/app_constants.dart';
@@ -43,8 +44,13 @@ class _HelpPageState extends State<HelpPage> {
                     : 'Проверка баланса',
               ),
               onTap: () {
-                // launch('tel:*100%23');
-                _call('*100%23');
+               
+                 if(Platform.isAndroid){
+  _call('*100%23');
+                  }
+                  else{
+                      _call('*100#');
+                  }
               },
             ),
             Divider(
@@ -57,7 +63,14 @@ class _HelpPageState extends State<HelpPage> {
                       : 'Последняя оплата баланса',
                 ),
                 onTap: () {
-                                    _call('*111*015%23');
+                                     if(Platform.isAndroid){
+                                     _call('*111*015%23');
+
+                  }
+                  else{
+                                                         _call('*111*015#');
+
+                  }
 
                 }),
             Divider(
@@ -70,7 +83,14 @@ class _HelpPageState extends State<HelpPage> {
                       : 'Мои расходы',
                 ),
                 onTap: () {
-                  _call('*111*025%23');
+                            if(Platform.isAndroid){
+                                     _call('*111*025%23');
+
+                  }
+                  else{
+                                                         _call('*111*025#');
+
+                  }
                 }),
             Divider(
               height: 2.0,
@@ -82,7 +102,15 @@ class _HelpPageState extends State<HelpPage> {
                       : 'Запрет рассылок',
                 ),
                 onTap: () {
-                   _call('**111*0271%23');
+                             if(Platform.isAndroid){
+                                     _call('*111*0271%23');
+
+                  }
+                  else{
+                                                         _call('*111*0271#');
+
+                  }
+
                 }),
             Divider(
               height: 2.0,
@@ -94,7 +122,13 @@ class _HelpPageState extends State<HelpPage> {
                       : 'Подключенные услуги',
                 ),
                 onTap: () {
-                  _call('140%23');
+              
+                   if(Platform.isAndroid){
+  _call('*140%23');
+                  }
+                  else{
+                      _call('*140#');
+                  }
                 }),
             Divider(
               height: 2.0,
@@ -104,7 +138,12 @@ class _HelpPageState extends State<HelpPage> {
                   languageType1 == uzbek ? 'Mening raqamim' : 'Мой номер',
                 ),
                 onTap: () {
-                  _call('*150%23');
+                  if(Platform.isAndroid){
+  _call('*150%23');
+                  }
+                  else{
+                      _call('*150#');
+                  }
                 }),
             Divider(
               height: 2.0,
@@ -116,7 +155,12 @@ class _HelpPageState extends State<HelpPage> {
                       : 'Все мои номера',
                 ),
                 onTap: () {
-                  _call('*151%23');
+                  if(Platform.isAndroid){
+  _call('*151%23');
+                  }
+                  else{
+                      _call('*151#');
+                  }
                 }),
             Divider(
               height: 2.0,

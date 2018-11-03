@@ -137,7 +137,13 @@ class _ChatPageState extends State<ChatPage> {
                 //   color: Colors.white,
                 // ),
                 onPressed: () {
-                  _call('*100%23');
+                  if(Platform.isAndroid){
+  _call('*100%23');
+                  }
+                  else{
+                      _call('*100#');
+                  }
+                
                 })
           ],
           title: new Text(widget.title),

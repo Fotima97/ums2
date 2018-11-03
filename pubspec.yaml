@@ -20,7 +20,7 @@ dependencies:
   url_launcher: ^3.0.3  
   shared_preferences: ^0.4.2
   share: ^0.5.3
-  http: ^0.11.3+17
+  http: ^0.11.3+16
   flushbar: ^0.8.2
   flutter_cache_manager: ^0.1.2
   path_provider: ^0.4.1

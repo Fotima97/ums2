@@ -255,7 +255,16 @@ class _InternetPageState extends State<InternetPage>
                         style: TextStyle(fontSize: 16.0),
                       ),
                       onTap: () {
-                        _call('*102%23');
+                                  if(Platform.isAndroid){
+                                                           _call('*102%23');
+
+
+                  }
+                  else{
+                                         _call('*102#');
+
+
+                  }
                       },
                     ),
                     ListTile(
@@ -267,7 +276,18 @@ class _InternetPageState extends State<InternetPage>
                         style: TextStyle(fontSize: 16.0),
                       ),
                       onTap: () {
-                          _call('*111*0011%23');
+                         
+                              if(Platform.isAndroid){
+                         _call('*111*0011%23');
+
+
+                  }
+                  else{
+                   _call('*111*0011#');
+
+
+                  }
+
                       },
                     ),
                     ListTile(
@@ -279,8 +299,17 @@ class _InternetPageState extends State<InternetPage>
                         style: TextStyle(fontSize: 16.0),
                       ),
                       onTap: () {
-                                                _call('*111*0011%23');
+                                               
+     if(Platform.isAndroid){
+                        _call('*111*0011%23');
 
+
+                  }
+                  else{
+                   _call('*111*0011#');
+
+
+                  }
                       },
                     ),
                     ListTile(
@@ -292,7 +321,16 @@ class _InternetPageState extends State<InternetPage>
                         style: TextStyle(fontSize: 16.0),
                       ),
                       onTap: () {
+                         if(Platform.isAndroid){
                         _call('*111*0010%23');
+
+
+                  }
+                  else{
+                   _call('*111*0010#');
+
+
+                  }
                       },
                     ),
                     ListTile(
@@ -304,7 +342,17 @@ class _InternetPageState extends State<InternetPage>
                         style: TextStyle(fontSize: 16.0),
                       ),
                       onTap: () {
-                        _call('*202*0%23');
+                        
+                         if(Platform.isAndroid){
+                       _call('*202*0%23');
+
+
+                  }
+                  else{
+                 _call('*202*0#');
+
+
+                  }
                       },
                     ),
                     ListTile(
