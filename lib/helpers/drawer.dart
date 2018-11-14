@@ -11,8 +11,6 @@ class DrawerContainer extends StatefulWidget {
 }
 
 class _DrawerContainerState extends State<DrawerContainer> {
-
-  
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -24,7 +22,7 @@ class _DrawerContainerState extends State<DrawerContainer> {
               padding: EdgeInsets.all(0.0),
               child: Center(
                   child: Image.asset(
-                'assets/ums.png',
+                'assets/umsControl1.png',
                 width: 150.0,
               )),
             ),
@@ -257,7 +255,8 @@ class _DrawerContainerState extends State<DrawerContainer> {
                   allowDrawingOutsideViewBox: true,
                 ),
                 onTap: () {
-                  launch('https://play.google.com/store/apps/details?id=com.project.ums');
+                  launch(
+                      'https://play.google.com/store/apps/details?id=com.project.ums');
                 },
               ),
             ),

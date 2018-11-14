@@ -97,7 +97,10 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: <Widget>[
                   Expanded(
-                    child: Image.asset('assets/ums.png'),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Image.asset('assets/umsControl1.png'),
+                    ),
                     flex: 2,
                   ),
                   SizedBox(
