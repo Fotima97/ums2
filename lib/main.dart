@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(primarySwatch: Colors.red, fontFamily: 'Roboto'),
       home: new HomePage(title: 'UMS Control'),
       routes: <String, WidgetBuilder>{
-        '/home': (BuildContext context) => HomePage(title: 'UMS Control'),
+        '/home': (BuildContext context) => HomePage(title: 'USSD Control'),
         '/help': (BuildContext context) =>
             HelpPage(title: languageType1 == uzbek ? 'Yordamchi' : 'Помощник'),
         '/internet': (BuildContext context) => InternetPage(

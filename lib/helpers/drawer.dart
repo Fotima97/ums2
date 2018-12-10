@@ -22,7 +22,7 @@ class _DrawerContainerState extends State<DrawerContainer> {
               padding: EdgeInsets.all(0.0),
               child: Center(
                   child: Image.asset(
-                'assets/umsControl1.png',
+                'assets/ussdControl.png',
                 width: 150.0,
               )),
             ),

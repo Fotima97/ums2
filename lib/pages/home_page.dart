@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Image.asset('assets/umsControl1.png'),
+                      child: Image.asset('assets/ussdControl.png'),
                     ),
                     flex: 2,
                   ),
