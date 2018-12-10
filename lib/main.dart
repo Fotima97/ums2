@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'UMS',
       debugShowCheckedModeBanner: false,
       theme: new ThemeData(primarySwatch: Colors.red, fontFamily: 'Roboto'),
-      home: new HomePage(title: 'UMS Control'),
+      home: new HomePage(title: 'USSD Control'),
       routes: <String, WidgetBuilder>{
         '/home': (BuildContext context) => HomePage(title: 'USSD Control'),
         '/help': (BuildContext context) =>

@@ -110,8 +110,8 @@ class _HomePageState extends State<HomePage> {
                     flex: 3,
                     child: Text(
                       languageType1 == uzbek
-                          ? 'TALABLARGA MOS ALOQA OPERATORI'
-                          : 'ОПЕРАТОР СВЯЗИ, КАКИМ ОН ДОЛЖЕН БЫТЬ',
+                          ? 'Boshqar! Nazorat qil! Zamon bilan hamnafas bo\'l!'
+                          : 'Управляй! Контролируй! Будь в тренде!',
                       style: TextStyle(
                           color: Colors.red,
                           fontSize: 16.0,
