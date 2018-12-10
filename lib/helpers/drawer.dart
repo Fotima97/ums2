@@ -19,7 +19,7 @@ class _DrawerContainerState extends State<DrawerContainer> {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              padding: EdgeInsets.all(0.0),
+              padding: EdgeInsets.all(15.0),
               child: Center(
                   child: Image.asset(
                 'assets/ussdControl.png',
