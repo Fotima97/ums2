@@ -6,10 +6,10 @@ import 'package:http/http.dart' as http;
 import 'package:flushbar/flushbar.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:ums/helpers/app_constants.dart';
-import 'package:ums/helpers/news_model.dart';
-import 'package:ums/pages/home_page.dart';
-import 'package:ums/pages/news_more_pade.dart';
+import 'package:ussdcontrol/helpers/app_constants.dart';
+import 'package:ussdcontrol/helpers/news_model.dart';
+import 'package:ussdcontrol/pages/home_page.dart';
+import 'package:ussdcontrol/pages/news_more_pade.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 
 class NewsPage extends StatefulWidget {
@@ -81,8 +81,8 @@ class _NewsPageState extends State<NewsPage> {
     if (connectivity == ConnectivityResult.mobile ||
         connectivity == ConnectivityResult.wifi) {
       final response = await client.get(languageType1 == uzbek
-          ? 'http://umscontrol.dst.uz/news/uz'
-          : 'http://umscontrol.dst.uz/news/ru');
+          ? 'http://ussdcontrol.dst.uz/news/uz'
+          : 'http://ussdcontrol.dst.uz/news/ru');
 
       if (response.statusCode == 200) {
         String body = utf8.decode(response.bodyBytes);

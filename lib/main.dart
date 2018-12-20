@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ums/helpers/app_constants.dart';
-import 'package:ums/pages/chat_page.dart';
-import 'package:ums/pages/help_page.dart';
-import 'package:ums/pages/home_page.dart';
-import 'package:ums/pages/internet_help_page.dart';
-import 'package:ums/pages/internet_page.dart';
-import 'package:ums/pages/language_page.dart';
-import 'package:ums/pages/news_page.dart';
-import 'package:ums/pages/services_page.dart';
-import 'package:ums/pages/tariffs_page.dart';
+import 'package:ussdcontrol/helpers/app_constants.dart';
+import 'package:ussdcontrol/pages/chat_page.dart';
+import 'package:ussdcontrol/pages/help_page.dart';
+import 'package:ussdcontrol/pages/home_page.dart';
+import 'package:ussdcontrol/pages/internet_help_page.dart';
+import 'package:ussdcontrol/pages/internet_page.dart';
+import 'package:ussdcontrol/pages/language_page.dart';
+import 'package:ussdcontrol/pages/news_page.dart';
+import 'package:ussdcontrol/pages/services_page.dart';
+import 'package:ussdcontrol/pages/tariffs_page.dart';
 
 void main() => runApp(new MyApp());
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'UMS',
+      title: 'USSD Control',
       debugShowCheckedModeBanner: false,
       theme: new ThemeData(primarySwatch: Colors.red, fontFamily: 'Roboto'),
       home: new HomePage(title: 'USSD Control'),

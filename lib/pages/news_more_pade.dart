@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ums/helpers/app_constants.dart';
-import 'package:ums/helpers/drawer.dart';
-import 'package:ums/pages/home_page.dart';
+import 'package:ussdcontrol/helpers/app_constants.dart';
+import 'package:ussdcontrol/helpers/drawer.dart';
+import 'package:ussdcontrol/pages/home_page.dart';
 
 class NewsMorePage extends StatefulWidget {
   NewsMorePage({Key key, this.title, this.body}) : super(key: key);

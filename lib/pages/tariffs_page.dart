@@ -6,11 +6,11 @@ import 'package:flutter_svg/svg.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:ums/helpers/app_constants.dart';
-import 'package:ums/helpers/dialog_box.dart';
-import 'package:ums/helpers/drawer.dart';
-import 'package:ums/helpers/tariff_model.dart';
-import 'package:ums/pages/home_page.dart';
+import 'package:ussdcontrol/helpers/app_constants.dart';
+import 'package:ussdcontrol/helpers/dialog_box.dart';
+import 'package:ussdcontrol/helpers/drawer.dart';
+import 'package:ussdcontrol/helpers/tariff_model.dart';
+import 'package:ussdcontrol/pages/home_page.dart';
 import 'package:connectivity/connectivity.dart';
 
 class TariffsPage extends StatefulWidget {
@@ -79,8 +79,8 @@ class _TariffsPageState extends State<TariffsPage> {
     if (connectivity == ConnectivityResult.mobile ||
         connectivity == ConnectivityResult.wifi) {
       final response = await client.get(languageType1 == uzbek
-          ? 'http://umscontrol.dst.uz/tariffs/uz'
-          : 'http://umscontrol.dst.uz/tariffs/ru');
+          ? 'http://ussdcontrol.dst.uz/tariffs/uz'
+          : 'http://ussdcontrol.dst.uz/tariffs/ru');
 
       if (response.statusCode == 200) {
         String body = utf8.decode(response.bodyBytes);

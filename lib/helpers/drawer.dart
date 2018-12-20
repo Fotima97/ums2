@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ums/helpers/app_constants.dart';
-import 'package:ums/pages/home_page.dart';
+import 'package:ussdcontrol/helpers/app_constants.dart';
+import 'package:ussdcontrol/pages/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:share/share.dart';
 

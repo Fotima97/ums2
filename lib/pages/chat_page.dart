@@ -8,12 +8,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:ums/helpers/app_constants.dart';
-import 'package:ums/helpers/chat_model.dart';
-import 'package:ums/helpers/dialog_box.dart';
-import 'package:ums/helpers/drawer.dart';
-import 'package:ums/pages/home_page.dart';
-import 'package:ums/pages/internet_help_page.dart';
+import 'package:ussdcontrol/helpers/app_constants.dart';
+import 'package:ussdcontrol/helpers/chat_model.dart';
+import 'package:ussdcontrol/helpers/dialog_box.dart';
+import 'package:ussdcontrol/helpers/drawer.dart';
+import 'package:ussdcontrol/pages/home_page.dart';
+import 'package:ussdcontrol/pages/internet_help_page.dart';
 import 'package:http/http.dart' as http;
 
 class ChatPage extends StatefulWidget {
@@ -87,8 +87,8 @@ class _ChatPageState extends State<ChatPage> {
     if (connectivity == ConnectivityResult.mobile ||
         connectivity == ConnectivityResult.wifi) {
       final response = await client.get(languageType1 == uzbek
-          ? 'http://umscontrol.dst.uz/packages/msms/uz'
-          : 'http://umscontrol.dst.uz/packages/msms/ru');
+          ? 'http://ussdcontrol.dst.uz/packages/msms/uz'
+          : 'http://ussdcontrol.dst.uz/packages/msms/ru');
 
       if (response.statusCode == 200) {
         String body = utf8.decode(response.bodyBytes);

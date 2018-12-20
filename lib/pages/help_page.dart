@@ -2,9 +2,9 @@ import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ums/helpers/app_constants.dart';
-import 'package:ums/helpers/drawer.dart';
-import 'package:ums/pages/home_page.dart';
+import 'package:ussdcontrol/helpers/app_constants.dart';
+import 'package:ussdcontrol/helpers/drawer.dart';
+import 'package:ussdcontrol/pages/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HelpPage extends StatefulWidget {

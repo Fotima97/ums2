@@ -3,10 +3,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-import 'package:ums/helpers/app_constants.dart';
+import 'package:ussdcontrol/helpers/app_constants.dart';
 import 'dart:io';
 
-import 'package:ums/pages/home_page.dart';
+import 'package:ussdcontrol/pages/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 const platform1 = const MethodChannel(channel);
